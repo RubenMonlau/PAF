@@ -14,11 +14,11 @@ void imprimirImpares() {
 }
 
 int main() {
-    // Crear els dos fils
+    // Crear los hijos
     std::thread filImparells(imprimirImpares);
     std::thread filParells(imprimirPares);
 
-    // Esperar que tots dos fils acabin
+    // Esperar a que acaben
     filImparells.join();
     filParells.join();
 
